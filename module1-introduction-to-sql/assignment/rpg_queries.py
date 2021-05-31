@@ -1,5 +1,6 @@
 import sqlite3
 from queries import *
+import pandas as pd
 """
 Use sqlite3 to load and write queries to explore the data, and answer the following questions.
 You should store each query as a string and label each as the indicated variable names.
@@ -45,3 +46,5 @@ print('Average number of weapons each character has: ', curs.fetchall()[0][0])
 
 curs.execute(AVG_CHARACTER_WEAPONS)
 print('Average number of weapons each character has: ', curs.fetchall()[0][0])
+
+conn.close()

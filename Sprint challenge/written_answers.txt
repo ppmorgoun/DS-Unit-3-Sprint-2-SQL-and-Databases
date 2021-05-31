@@ -1,0 +1,21 @@
+In the Northwind database, what is the type of relationship between the Employee and Territory tables?
+
+ANSWER: the Employee and Territory tables have are related via the EmployeeTerritory table. The Employee primary key
+"ID" manifests in the EmployeeTerritory table under "EmployeeId", next to the "TerritoryId" column that indicates which
+employee operates in which territory. This "TerritoryId" column is the primary key in the "Territory" table.
+
+What is a situation where a document store (like MongoDB) is appropriate, and what is a situation where it is not appropriate?
+
+MongoDB is a document-orientated database which provides a flexible semi-structured way to store and retrieve data. A great
+example of when document-orientated databases are appropriate is in the case of big data, when large volumes of records are
+being generated, of various data types and in various forms. Here a the type of databases structure MongoDB provides
+excels as you can be flexible in the insertion of data without having to predefine a schema. A situation where these
+sorts of databases are not appropriate could be in the case of a transactional ledger, where the data the use-case of
+this databases begets a adherence to the ACID guidelines (atomicity, consistency, isolation and durability).
+
+
+What is "NewSQL", and what is it trying to achieve?
+
+NewSQL is a new paradigm of databases that attempts to provide the scalability of NO-SQL approaches (like MongaDB and
+other document orientated databases) with consistency and reliability of SQL approaches (i.e. while meeting the ACID
+guidelines).
